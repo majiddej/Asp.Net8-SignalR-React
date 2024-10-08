@@ -33,17 +33,15 @@ cd your-repo-name
 Navigate to the Server folder:
 
 ```bash
-Copy code
 cd Server
-Install dependencies:
+
 
 ```bash
-Copy code
 dotnet restore
 Configure JWT or other authentication mechanisms in Program.cs if necessary. For example, to use JWT:
 
 csharp
-Copy code
+
 builder.Services.AddAuthentication("Bearer")
     .AddJwtBearer(options =>
     {
@@ -57,31 +55,27 @@ Copy code
 dotnet run
 The API should now be running at https://localhost:5001.
 
-3. Frontend Setup (React)
+### 3. Frontend Setup (React)
 Navigate to the Client folder:
 
 ```bash
-Copy code
 cd Client
 Install dependencies:
 
 bash
-Copy code
 npm install
 Start the React development server:
 
 ```bash
-Copy code
 npm start
 The React app should now be running at http://localhost:3000.
 
-4. SignalR Integration
+### 4. SignalR Integration
 The SignalR hub is available at the /userCountHub endpoint in the ASP.NET Core Web API. The React app connects to this hub to listen for real-time updates about the online user count.
 
 In your React app, ensure that you have the following setup to connect to the SignalR hub:
 
 javascript
-Copy code
 import * as signalR from '@microsoft/signalr';
 
 const connection = new signalR.HubConnectionBuilder()
@@ -104,7 +98,6 @@ Frontend: Ensure the JWT token is passed when connecting to the SignalR hub.
 Example for adding the JWT token in React:
 
 javascript
-Copy code
 const connection = new signalR.HubConnectionBuilder()
   .withUrl("https://your-api-url/userCountHub", {
     accessTokenFactory: () => localStorage.getItem("token") // Fetch your stored token
@@ -113,7 +106,6 @@ const connection = new signalR.HubConnectionBuilder()
   .build();
 Project Structure
 bash
-Copy code
 your-repo-name/
 ├── Client/                 # React frontend
 │   ├── src/
