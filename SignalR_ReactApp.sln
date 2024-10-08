@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35013.160
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignalR_ReactApp.Server", "SignalR_ReactApp.Server\SignalR_ReactApp.Server.csproj", "{A537C9B0-556B-4FD6-B9D4-EFFDFFC92647}"
+EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "signalr_reactapp.client", "signalr_reactapp.client\signalr_reactapp.client.esproj", "{1D7B0B71-54ED-4578-85C1-CCD44A20ED12}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A537C9B0-556B-4FD6-B9D4-EFFDFFC92647}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A537C9B0-556B-4FD6-B9D4-EFFDFFC92647}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A537C9B0-556B-4FD6-B9D4-EFFDFFC92647}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A537C9B0-556B-4FD6-B9D4-EFFDFFC92647}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D7B0B71-54ED-4578-85C1-CCD44A20ED12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D7B0B71-54ED-4578-85C1-CCD44A20ED12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D7B0B71-54ED-4578-85C1-CCD44A20ED12}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{1D7B0B71-54ED-4578-85C1-CCD44A20ED12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D7B0B71-54ED-4578-85C1-CCD44A20ED12}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D7B0B71-54ED-4578-85C1-CCD44A20ED12}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8BF125A4-8035-4180-9CEE-919EFC705B66}
+	EndGlobalSection
+EndGlobal
